@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04 - Webpack</title>
+</head>
+<body>
+    <canvas id="canvas" width=400 height=200></canvas>
+<div class="controls">
+    <div>
+        <label>Rigidez da mola (<span id="k_slider_label">-20</span> kg / s<sup>2</sup>)</label> 
+        <input id="k_slider" type="range" min=0 max=100 value=20></input>
+    </div>
+    <div>
+        <label>Coeficiente de atrito viscoso (amortecedor) (<span id="b_slider_label">-0.5</span> kg / s)</label> 
+        <input id="b_slider" type="range" min=0 max=10 value=0.5 step=0.1></input>
+    </div>
+    <div>
+        <label>Frequência do sinal de entrada (<span id="f_slider_label">0</span>) Hz</label> 
+        <input id="f_slider" type="range" min=0 max=10 value=0 step=0.1></input>
+    </div>
+    <div>
+        <label>Massa (<span id="m_slider_label">0.5</span>) kg</label> 
+        <input id="m_slider" type="range" min=0.1 max=5 value=0.5 step=0.1></input>
+    </div>
+
+</div>
+
+</body>
+</html>
